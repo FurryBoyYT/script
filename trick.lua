@@ -137,7 +137,7 @@ do
         end,
         __newindex = fsmt.__newindex,
         __call = fsmt.__call
-    })0
+    })
     --Changing owner to fake player object to support owner:GetMouse()
     game,owner = g,g.Players.LocalPlayer
 end
