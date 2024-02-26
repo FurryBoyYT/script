@@ -145,9 +145,13 @@ end
 mamae=Instance.new("Hint", game:GetService("Workspace"))
 while wait(0.2) do
     mamae.Text="⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️"
+    wait(0.1)
     mamae.Text="⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️"
+    wait(0.1)
     mamae.Text="⚠️⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️⚠️"
+    wait(0.1)
     mamae.Text="⚠️⚠️ | SKIDDED BY FurryBoy_YT4000 | ⚠️⚠️"
+    wait(0.1)
 end
     
 print("Injecting ExSer SS Infection Code . . .")
